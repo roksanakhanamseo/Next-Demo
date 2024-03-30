@@ -11,7 +11,7 @@ export default async function Posts() {
       <div className="h1 text-center">All Posts</div>
       <ul className="mt-6">
         {posts.map((post) => (
-          <li className="bg-blue-500" key={post.id}>
+          <li className="bg-blue-500 border-solid mt-5" key={post.id}>
             <Link href={`posts/${post.id}`}>
               {post.id} - {post.title}
             </Link>
